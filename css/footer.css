@@ -1,6 +1,6 @@
 .footer {
-  padding-top: 42px;
-  padding-bottom: 42px;
+  padding-top: 45px;
+  padding-bottom: 45px;
   background-color: #2f324b;
 }
 
@@ -13,9 +13,6 @@
 .footer__copy {
   display: flex;
   align-items: center;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 18px;
 }
 
 .footer__logo {
@@ -23,13 +20,28 @@
 }
 
 .copyright {
+  display: inline-block;
   max-width: 127px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 17px;
 }
 
 .footer__author {
   font-size: 12px;
   font-weight: 500;
   line-height: 17px;
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    padding-top: 38px;
+    padding-bottom: 49px;
+  }
+
+  .footer__author {
+    transform: translateX(-12px);
+  }
 }
 
 @media (max-width: 768px) {
@@ -46,18 +58,29 @@
 
 @media (max-width: 480px) {
   .footer {
-    padding-top: 25px;
+    padding-top: 23px;
     padding-bottom: 15px;
     background-image: linear-gradient(to bottom, #2f324b 60%, #2a2c3f 40%);
   }
 
-  .footer__container {
-    align-items: flex-start;
+  .call-me {
+    align-self: start;
+    padding-top: 5px;
   }
 
   .footer__copy {
     margin-bottom: 40px;
     font-size: 8px;
     line-height: 11px;
+  }
+
+  .copyright {
+    max-width: 90px;
+    font-size: 8px;
+    line-height: 11px;
+  }
+
+  .footer__author {
+    transform: none;
   }
 }

@@ -5,7 +5,8 @@
 }
 
 .contacts__title {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
+  transform: translateX(-12px);
 }
 
 .contacts__descr {
@@ -32,7 +33,7 @@
   border: 1px solid var(--white-color);
   border-radius: 50px;
   padding: 9px 25px;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   width: 100%;
   height: 44px;
   background-color: transparent;
@@ -59,7 +60,7 @@
 }
 
 .call-form__btn {
-  padding: 11px 38px;
+  padding: 13px 38px;
 }
 
 @media (min-width: 1025px) {
@@ -105,9 +106,20 @@
 }
 
 @media (max-width: 1024px) {
+  .contacts {
+    padding-bottom: 55px;
+  }
+
+  .contacts__title {
+    margin-bottom: 16px;
+    transform: translateX(-5px);
+  }
+
   .contacts__descr {
+    margin-bottom: 47px;
     font-size: 20px;
     line-height: 23px;
+    transform: translateX(8px);
   }
 
   .call-form { 
@@ -140,10 +152,20 @@
 }
 
 @media (max-width: 480px) {
+  .contacts {
+    padding-bottom: 30px;
+  }
+
+  .contacts__title {
+    margin-bottom: 14px;
+    transform: translateX(-2px);
+  }
+
   .contacts__descr {
     margin-bottom: 35px;
     font-size: 12px;
     line-height: 14px;
+    transform: none;
   }
 
   .call-form { 
@@ -165,7 +187,7 @@
   }
 
   .call-form__btn {
-    padding: 8px 15px;
+    padding: 9px 29px;
   }
 
   .contacts__agreement {
