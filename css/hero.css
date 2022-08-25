@@ -189,9 +189,13 @@
   
   .hero__descr {
     margin: 0;
-    margin-bottom: 12px;
+    margin-bottom: 52px;
     font-size: 14px;
     line-height: 20px;
+  }
+
+  .hero__text-hidden {
+    display: none;
   }
 
   .hero__btn {

@@ -41,17 +41,17 @@
             Заголовок c&nbsp;уникальным торговым предложение по&nbsp;системе&nbsp;4U
           </h1>
           <p class="hero__descr">
-            Описания предлжения компании. Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на&nbsp;русском языке, а&nbsp;начинающему.
+            Описания предлжения компании. Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более <span class="hero__text-hidden">менее осмысленного текста рыбы на&nbsp;русском языке, а&nbsp;начинающему</span>.
           </p>
-          <button class="btn-reset btn hero__btn">Подробнее</button>
+          <button class="btn-reset btn hero__btn" type="button">Подробнее</button>
         </div>
       </div>
     </section>
 
     <section class="advantages section-padding">
     <div class="container advantages__container">
-      <h2 class="section-title advanteges__title">Уникальный заголовок для преимущества компании</h2>
-      <p class="advanteges__subtitle">О нас</p>
+      <h2 class="section-title advantages__title">Уникальный заголовок для преимущества компании</h2>
+      <p class="advantages__subtitle">О нас</p>
       <p class="advantages__descr">
         Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на&nbsp;русском языке, а&nbsp;начинающему оратору отточить.
       </p>
@@ -97,16 +97,18 @@
         </p>
 
         <form class="contacts__form call-form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-          <input class="call-form__input" type="text" name="name" placeholder="Ваше имя" required>
-          <input class="call-form__input" type="tel" name="phone" placeholder="Телефон" required>
-          <input class="call-form__input" type="email" name="email" placeholder="E-mail" required>
+          <fieldset class="call-form__inner">
+            <input class="call-form__input" type="text" name="name" placeholder="Ваше имя" required>
+            <input class="call-form__input" type="tel" name="phone" placeholder="Телефон" required>
+            <input class="call-form__input" type="email" name="email" placeholder="E-mail" required>
+          </fieldset>
 
-          <button class="btn-reset btn call-form__btn">Позвоните мне</button>
+          <button class="btn-reset btn call-form__btn" type="submit">Позвоните мне</button>
+
+          <div class="contacts__agreement">
+            Я даю своё <a class="contacts__link" href="#">согласие</a> на обработку моих персональных данных.
+          </div>
         </form>
-
-        <div class="contacts__agreement">
-          Я даю своё <a class="contacts__link" href="#">согласие</a> на обработку моих персональных данных.
-        </div>
       </div>
     </section>
   </main>

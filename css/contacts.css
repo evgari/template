@@ -19,13 +19,18 @@
 
 .contacts__form {
   margin: 0 auto;
-  margin-bottom: 50px;
 }
 
 .call-form {
   display: flex;
   flex-direction: column;
   align-items: center;  
+}
+
+.call-form__inner {
+  border: none;
+  padding: 0;
+  margin-bottom: 50px;
   max-width: 423px;
 }
 
@@ -38,6 +43,10 @@
   height: 44px;
   background-color: transparent;
   caret-color: var(--white-color);
+}
+
+.call-form__input:last-child {
+  margin-bottom: 0;
 }
 
 .call-form__input::placeholder {
@@ -55,12 +64,9 @@
   opacity: 0;
 }
 
-.call-form__input:last-of-type {
-  margin-bottom: 50px;
-}
-
 .call-form__btn {
   padding: 13px 38px;
+  margin-bottom: 50px;
 }
 
 @media (min-width: 1025px) {
@@ -80,8 +86,7 @@
 
 .contacts__agreement {
   font-size: 20px;
-  line-height: 23px;
-  text-align: center;
+  line-height: 24px;
 }
 
 .contacts__link {
@@ -90,18 +95,18 @@
 }
 
 @media (min-width: 1025px) {
-  .contacts__link:hover {
+  .checkbox__link:hover {
     color: var(--accent-dark-color);
   }
 }
 
-.contacts__link:focus-visible {
+.checkbox__link:focus-visible {
   border-radius: 10px;
   outline: 2px solid var(--accent-light-color);
   outline-offset: 2px;
 }
 
-.contacts__link:active {
+.checkbox__link:active {
   color: var(--accent-light-color);
 }
 
@@ -122,7 +127,7 @@
     transform: translateX(8px);
   }
 
-  .call-form { 
+  .call-form__inner { 
     max-width: 377px;
   }
 
@@ -135,7 +140,7 @@
     font-size: 20px;
   }
 
-  .contacts__form {
+  .call-form__btn {
     margin-bottom: 30px;
   }
 
@@ -148,6 +153,12 @@
 @media (max-width: 768px) {
   .contacts__descr {
     font-size: 18px;
+  }
+
+  .contacts__agreement {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
 }
 
@@ -168,18 +179,15 @@
     transform: none;
   }
 
-  .call-form { 
+  .call-form__inner { 
     max-width: none;
+    margin-bottom: 45px;
   }
 
   .call-form__input {
     padding: 6px 16px;
     margin-bottom: 15px;
     height: 28px;
-  }
-
-  .call-form__input:last-of-type {
-    margin-bottom: 45px;
   }
 
   .call-form__input::placeholder {
