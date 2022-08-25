@@ -95,18 +95,18 @@
 }
 
 @media (min-width: 1025px) {
-  .checkbox__link:hover {
+  .contacts__link:hover {
     color: var(--accent-dark-color);
   }
 }
 
-.checkbox__link:focus-visible {
+.contacts__link:focus-visible {
   border-radius: 10px;
   outline: 2px solid var(--accent-light-color);
   outline-offset: 2px;
 }
 
-.checkbox__link:active {
+.contacts__link:active {
   color: var(--accent-light-color);
 }
 
